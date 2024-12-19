@@ -1,1 +1,79 @@
 
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{cite}
+
+% Marges
+\geometry{margin=2.5cm}
+
+% En-tête et pied de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Projet Quantum Embeddings : Rapport à mi-parcours}
+\fancyhead[R]{\thepage}
+
+% Titre principal
+\title{\textbf{Projet INFONUM : Rapport à mi-parcours}}
+\author{Pierre Jourdin \\
+        Pierre El Anati \\
+        Malek Bouhadida}
+\date{For December 20, 2024}
+
+% Sectionnement
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{1em}{}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Contexte et problème posé}
+
+Le projet est réalisé en collaboration avec \textbf{CACIB} (Crédit Agricole Corporate and Investment Bank). CACIB souhaite explorer le potentiel de l'\textit{informatique quantique} pour le traitement des données financières.
+
+L'objectif principal de ce projet de veille technologique est de développer des \textbf{algorithmes d'embedding} exploitant l'informatique quantique. Ces algorithmes sont destinés à fournir des représentations efficaces des données financières, dans le but de préparer la banque à l'éventuelle démocratisation des ordinateurs quantiques. En effet, si ces technologies deviennent opérationnelles dans le futur, CACIB souhaite disposer d'une base d'algorithmes prête à être déployée pour en tirer parti immédiatement.
+
+Le problème posé peut être formulé ainsi : \textit{Comment utiliser l'informatique quantique pour générer des embeddings optimisés sur des données financières en anticipant les évolutions technologiques à venir ?}
+
+
+\section{État de l'art des solutions existantes}
+
+\section{Schéma d'ensemble}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{schema.png}
+    \caption{Schéma d'ensemble du projet}
+    \label{fig:schema}
+\end{figure}
+
+\section{Analyse des points clés et justification des choix \\techniques/scientifiques}
+
+\section{Liste des tâches et état d'avancement}
+
+\begin{itemize}
+    \item \textbf{Tâche 1 :} Etudier l'état de l'art -- État d'avancement (80\%)
+    \item \textbf{Tâche 2 :} Reproduire les résultats de\cite{lloyd2020quantum} pour se faire la main -- État d'avancement (40\%)
+    \item \textbf{Tâche 3 :} Implémenter des modèles sur les données de CACIB -- État d'avancement (0\%)
+    \item \textbf{Tâche 4 :} Comparer l'approche quantique avec l'approche classique via des benchmarks -- État d'avancement (0\%)
+\end{itemize}
+
+\section{Problèmes rencontrés}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
