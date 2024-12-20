@@ -12,7 +12,10 @@
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{cite}
-
+\usepackage[sort&compress,numbers,square]{natbib}
+\bibliographystyle{mplainnat}
+\usepackage[backend=biber]{biblatex} 
+\addbibresource{refs.bib} % 
 % Marges
 \geometry{margin=2.5cm}
 
@@ -27,14 +30,13 @@
 \author{Pierre Jourdin \\
         Pierre El Anati \\
         Malek Bouhadida}
-\date{For December 20, 2024}
+\date{20 Décembre 2024}
 
 % Sectionnement
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{1em}{}
 
 \begin{document}
-
 \maketitle
 \tableofcontents
 \newpage
@@ -42,16 +44,16 @@
 \section{Contexte et problème posé}
 
 Le projet est réalisé en collaboration avec \textbf{CACIB} (Crédit Agricole Corporate and Investment Bank). CACIB souhaite explorer le potentiel de l'\textit{informatique quantique} pour le traitement des données financières.
-
+\\
 L'objectif principal de ce projet de veille technologique est de développer des \textbf{algorithmes d'embedding} exploitant l'informatique quantique. Ces algorithmes sont destinés à fournir des représentations efficaces des données financières, dans le but de préparer la banque à l'éventuelle démocratisation des ordinateurs quantiques. En effet, si ces technologies deviennent opérationnelles dans le futur, CACIB souhaite disposer d'une base d'algorithmes prête à être déployée pour en tirer parti immédiatement.
-
+\\\\
 Le problème posé peut être formulé ainsi : \textit{Comment utiliser l'informatique quantique pour générer des embeddings optimisés sur des données financières en anticipant les évolutions technologiques à venir ?}
 
 
 \section{État de l'art des solutions existantes}
 Pour établir un état de l’art solide, nous avons commencé par une sélection d’articles en nous basant sur leurs abstracts. Cette étape préliminaire nous a permis d’identifier les travaux les plus cités et alignés avec notre projet, sur lesquels nous avons approfondi nos recherches.
-L’article que nous avons décidé d’approfondir est : S. Lloyd, M. Schuld, A. Ijaz, Quantum embeddings for machine learning, 2020. Il propose une approche innovante pour le traitement de données classiques dans des circuits quantiques. L’objectif est d’exploiter ces données pour les représenter dans un espace quantique, en l’occurrence sur une sphère de Bloch, de manière que les classes soient aisément séparables lors de la mesure.
-L’approche décrite dans cet article repose sur un apprentissage des paramètres du circuit quantique (rotations autour des axes X et Y d’angles theta), où l’embedding des données dans l’espace quantique est optimisé afin de maximiser leur séparabilité. Contrairement à la méthode classique qui entraîne la mesure, l’article met l’accent sur l’entraînement de l’embedding, permettant ainsi de mieux utiliser les capacités des processeurs quantiques à court terme.
+L’article que nous avons décidé d’approfondir est intitulé "Quantum embeddings for machine learning" \cite{1}. les auteurs proposent une approche innovante pour le traitement de données classiques dans des circuits quantiques. L’objectif est d’exploiter ces données pour les représenter dans un espace quantique, en l’occurrence sur une sphère de Bloch, de manière que les classes soient aisément séparables lors de la mesure.
+L’approche décrite dans cet article repose sur un apprentissage des paramètres du circuit quantique (rotations autour des axes X et Y d’angles theta), où l’embedding des données dans l’espace quantique est optimisé afin de maximiser leur séparabilité. Contrairement à l'approche usuelle adoptée en machine learning quantique où l'on entraîne le circuit de mesure, l’article met l’accent plutôt sur l’entraînement de l’embedding, permettant ainsi de mieux utiliser les capacités des processeurs quantiques à court terme.
 
 \section{Schéma d'ensemble}
 \begin{figure}[h!]
@@ -61,7 +63,7 @@ L’approche décrite dans cet article repose sur un apprentissage des paramètr
     \label{fig:schema}
 \end{figure}
 
-\section{Analyse des points clés et justification des choix techniques/scientifiques}
+\section{Analyse des points clés et justification des choix techniques et scientifiques}
 
 \begin{itemize}
     \item Choix d’utiliser COBYLA comme algorithme d’optimisation, car le calcul du gradient sur un QPU est trop coûteux.
@@ -71,9 +73,9 @@ L’approche décrite dans cet article repose sur un apprentissage des paramètr
 \section{Liste des tâches et état d'avancement}
 
 \begin{itemize}
-    \item \textbf{Tâche 1 :} Etudier l'état de l'art -- État d'avancement (80\%)
-    \item \textbf{Tâche 2 :} Reproduire les résultats de\cite{lloyd2020quantum} pour se faire la main -- État d'avancement (40\%)
-    \item \textbf{Tâche 3 :} Prise en main de la DCE -- État d'avancement (60\%)
+    \item \textbf{Tâche 1 :} Etudier l'état de l'art (embeddings classiques VS embeddings quantiques) -- État d'avancement (80\%)
+    \item \textbf{Tâche 2 :} Reproduire les résultats de \cite{1} pour se faire la main (2 circuits quantiques à implémenter avec leurs loss et mesures) -- État d'avancement (40\%)
+    \item \textbf{Tâche 3 :} Prendre en main de la DCE -- État d'avancement (60\%)
     \item \textbf{Tâche 4 :} Implémenter des modèles sur les données de CACIB -- État d'avancement (0\%)
     \item \textbf{Tâche 5 :} Comparer l'approche quantique avec l'approche classique via des benchmarks -- État d'avancement (0\%)
 \end{itemize}
@@ -81,12 +83,15 @@ L’approche décrite dans cet article repose sur un apprentissage des paramètr
 \section{Problèmes rencontrés}
 
 \subsection*{Problèmes d'ordre technique : }
-Entrainer un circuit quantique avec une loss spécifique en utilisant qiskit.
+\begin{itemize}
+    \item Entrainer un circuit quantique avec une loss spécifique en utilisant qiskit.
+\end{itemize}
+
 
 \subsection*{Autres}
 Pas de prise en compte du bruit quantique (imprécisions) dans l'article reproduit
 
-\bibliographystyle{plain}
-\bibliography{references}
+\newpage
+\printbibliography
 
 \end{document}
