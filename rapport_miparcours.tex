@@ -61,7 +61,12 @@ L’approche décrite dans cet article repose sur un apprentissage des paramètr
     \label{fig:schema}
 \end{figure}
 
-\section{Analyse des points clés et justification des choix \\techniques/scientifiques}
+\section{Analyse des points clés et justification des choix techniques/scientifiques}
+
+\begin{itemize}
+    \item Choix d’utiliser COBYLA comme algorithme d’optimisation, car le calcul du gradient sur un QPU est trop coûteux.
+    \item Adoption d'une approche réaliste basée sur les machines NISQ (Noisy Intermediate-Scale Quantum), prenant en compte les imperfections des ordinateurs quantiques actuels, notamment les erreurs dues au bruit, à la décohérence et à la taille limitée des qubits. Cette approche nous permet d'exécuter notre code sur de véritables ordinateurs quantiques.
+\end{itemize}
 
 \section{Liste des tâches et état d'avancement}
 
