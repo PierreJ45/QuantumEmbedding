@@ -49,9 +49,11 @@ Le problème posé peut être formulé ainsi : \textit{Comment utiliser l'inform
 
 
 \section{État de l'art des solutions existantes}
+Pour établir un état de l’art solide, nous avons commencé par une sélection d’articles en nous basant sur leurs abstracts. Cette étape préliminaire nous a permis d’identifier les travaux les plus cités et alignés avec notre projet, sur lesquels nous avons approfondi nos recherches.
+L’article que nous avons décidé d’approfondir est : S. Lloyd, M. Schuld, A. Ijaz, Quantum embeddings for machine learning, 2020. Il propose une approche innovante pour le traitement de données classiques dans des circuits quantiques. L’objectif est d’exploiter ces données pour les représenter dans un espace quantique, en l’occurrence sur une sphère de Bloch, de manière que les classes soient aisément séparables lors de la mesure.
+L’approche décrite dans cet article repose sur un apprentissage des paramètres du circuit quantique (rotations autour des axes X et Y d’angles theta), où l’embedding des données dans l’espace quantique est optimisé afin de maximiser leur séparabilité. Contrairement à la méthode classique qui entraîne la mesure, l’article met l’accent sur l’entraînement de l’embedding, permettant ainsi de mieux utiliser les capacités des processeurs quantiques à court terme.
 
 \section{Schéma d'ensemble}
-
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{schema.png}
