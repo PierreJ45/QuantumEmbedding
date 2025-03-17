@@ -5,3 +5,4 @@ newQiskitEnv/
 data/
 tokennn.py
 QLSTM/
+mlruns/
