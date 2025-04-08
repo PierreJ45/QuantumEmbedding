@@ -2,6 +2,7 @@
 __pycache__/
 qiskitEnv/
 newQiskitEnv/
+envQuantumMinimal/
 data/
 tokennn.py
 QLSTM/
