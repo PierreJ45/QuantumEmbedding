@@ -8,3 +8,4 @@ tokennn.py
 QLSTM/
 mlruns/
 dataset.ipynb
+profile.prof
