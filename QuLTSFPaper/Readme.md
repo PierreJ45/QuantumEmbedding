@@ -70,4 +70,4 @@ Points à retenir:
 
 # Références
 
-- [1]: https://arxiv.org/abs/2412.13769 "QuLTSF: Quantum Long-Term Series Forecasting"
+[1] QuLTSF: Quantum Long-Term Series Forecasting. Disponible sur arXiv : https://arxiv.org/abs/2412.13769
