@@ -1,4 +1,4 @@
-# QuLTSF — Modèle Quantique-Classique pour la Prévision de Séries Temporelles à Long Terme
+# QuLTSF — Modèle hybride pour la Prévision de Séries Temporelles à Long Terme
 
 Cette partie du projet explore l'utilisation d'un modèle hybride **quantique-classique** nommé **QuLTSF** (Quantum Long-Term Series Forecasting) pour la **prédiction à long terme de séries temporelles (LTSF)**.  
 L’objectif est de comparer ses performances à celles de modèles linéaires, considérés comme baselines.
@@ -39,13 +39,13 @@ L’objectif est de comparer ses performances à celles de modèles linéaires, 
 ## Résultats principaux
 ### Comparaison des performances sur un même dataset, avec différentes configurations:
 
-| Configuration     | QuLTSF                       | Linear                        | NLinear                       | DLinear                       |
-|------------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-|                  | #Param        | MSE           | #Param        | MSE           | #Param        | MSE           | #Param        | MSE           |
-| L=30, T=5        | 286           | 1.95          | 155           | 1.14          | 155           | 1.18          | 310           | **1.06**       |
-| L=60, T=5        | 526           | 2.14          | 305           | 1.14          | 305           | 1.16          | 610           | **1.13**       |
-| L=60, T=10       | 1050          | 2.85          | 610           | 1.96          | 610           | **1.88**       | 1220          | 1.98          |
-| L=120, T=5       | 1006          | 4.23          | 605           | 1.20          | 605           | 1.22          | 1210          | **1.14**       |
+| Configuration     | QuLTSF (#Param) | QuLTSF (MSE) | Linear (#Param) | Linear (MSE) | NLinear (#Param) | NLinear (MSE) | DLinear (#Param) | DLinear (MSE) |
+|------------------|------------------|--------------|------------------|--------------|-------------------|----------------|-------------------|----------------|
+| L=30, T=5        | 286              | 1.95         | 155              | 1.14         | 155               | 1.18           | 310               | **1.06**        |
+| L=60, T=5        | 526              | 2.14         | 305              | 1.14         | 305               | 1.16           | 610               | **1.13**        |
+| L=60, T=10       | 1050             | 2.85         | 610              | 1.96         | 610               | **1.88**        | 1220              | 1.98           |
+| L=120, T=5       | 1006             | 4.23         | 605              | 1.20         | 605               | 1.22           | 1210              | **1.14**        |
+
 
 
 Points à retenir:
