@@ -49,6 +49,7 @@ L’objectif est de comparer ses performances à celles de modèles linéaires, 
 
 
 Points à retenir:
+
 - Augmenter L n'améliore pas les résultats, ce qui contre intuitif, car augmenter la taille du contexte et donc de la séquence d'entrée donnearait plus d'information au modèle pour réaliser ses prédictions. Cependant, cela va en parallèle augmenter le nombre de paramètres, face à une réduction du nombre d'instances disponibles pour l'entrainement. Par conséquent, l'entraînement devient plus compliqué.
 
 - Pour les 4 modèles et pour toutes les configurations, la MSE normalisée est > 1 : Aucun des modèles n'est parvenu à faire mieux qu'un modèle naïf qui prédit la moyenne constante.
@@ -62,6 +63,8 @@ Points à retenir:
 | EUR-USD   | 1.95       | 1.14       | 1.18       | **1.06**   |
 | MRK       | 0.0657     | **0.0061** | 0.0059     | **0.0061** |
 | Météo     | **0.000316** | 0.000328   | 0.000331   | 0.000328   |
+
+Points à retenir:
 
 - Les performances des 4 modèles est beaucoup plus meilleure dans le cas du dataset MRK et Météo. Leur avantage para rapport au premier dataset EUR-USD, est que la target est stationnaire. De plus, le dataset Météo contient 10x plus d'instances.
 
