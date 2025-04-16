@@ -43,6 +43,6 @@ pip install -r requirements.txt
 ```
 
 ##  Contribution
-- Pierre El Anati
-- Pierre Jourdin
-- Malek Bouhadida
+- Pierre El Anati : pierre.el-anati@student-cs.fr
+- Pierre Jourdin : pierre.jourdin@student-cs.fr
+- Malek Bouhadida : malek.bouhadida@student-cs.fr
