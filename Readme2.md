@@ -20,10 +20,16 @@ Ce dépôt regroupe plusieurs implémentations de modèles hybrides appliqués �
 
 ### `QuLTSF/`
 
-- Contient des expériences en cours sur la **Quantum Long-Term Sequence Forecasting** (QuLTSF).
+- Implémente l'article **Hari Hara Suthan Chittoor, Paul Robert Griffin, Ariel Neufeld, Jayne Thompson, Mile Gu. "QuLTSF: Long-Term Time Series Forecasting with Quantum Machine Learning" (2024). URL: https://arxiv.org/abs/2412.13769**.
+- Contenu principal :
+  - `data_provider` : Folder contenant les datasets utilisés ainsi que les script permettant de prétraiter les données.
+  - `models` : Folder contenant les modèles implémentés sur `Pytorch` pour les baselines, et sur `Pennylane` et `Pytorch` également pour le modèle hybride QuLTSF.
+  - `utils` : Folder contenant heper functions.
+  - `linear.py` : Script à exécuter pour lancer la pipeline d'entrainement et d'évaluation d'un modèle linéaire séléctionné, sous une configuration bien choisie.
+  - `qultsf.py` : Script à exécuter pour lancer la pipeline d'entrainement et d'évaluation du modèle QuLTSF, sous une configuration bien choisie.
 
 
-## 🔧 Environnement recommandé
+##  Environnement recommandé
 
 - Python >= 3.8
 - TensorFlow / PyTorch
@@ -34,3 +40,4 @@ Créer un environnement avec :
 
 ```bash
 pip install -r requirements.txt
+```
