@@ -41,3 +41,8 @@ Créer un environnement avec :
 ```bash
 pip install -r requirements.txt
 ```
+
+##  Contribution
+- Pierre El Anati
+- Pierre Jourdin
+- Malek Bouhadida
