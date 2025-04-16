@@ -66,9 +66,9 @@ Points à retenir:
 
 Points à retenir:
 
-- Les performances des 4 modèles est beaucoup plus meilleure dans le cas du dataset MRK et Météo. Leur avantage para rapport au premier dataset EUR-USD, est que la target est stationnaire. De plus, le dataset Météo contient 10x plus d'instances.
+- Les performances des 4 modèles est beaucoup plus meilleure dans le cas du dataset MRK et Météo. Leur avantage par rapport au premier dataset EUR-USD, est que la target est stationnaire. De plus, le dataset Météo contient 10x plus d'instances.
 
-- Le QuLTSF surpasse les baselines, dans le cas du dataset Météo, donnat une MSE normalisée plus faible. Cependant, il faut noter que pour avoir ce résultat, nous avons augmenté le nombre de paramètres du QuLTSF (2055 paramètres pour `nqubits = 6` et `q_layers = 2` vs ~300 paramètres pour les modèles linéaires). Le temps de calcul à aussi augmenté considérablement : plus que 6h. 
+- Le QuLTSF surpasse les baselines, dans le cas du dataset Météo, donnant une MSE normalisée plus faible. Cependant, il faut noter que pour avoir ce résultat, nous avons augmenté le nombre de paramètres du QuLTSF (2055 paramètres pour `nqubits = 6` et `q_layers = 2` vs ~300 paramètres pour les modèles linéaires). Le temps de calcul à aussi augmenté considérablement : plus que 6h. 
 
 
 # Références
