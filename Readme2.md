@@ -33,7 +33,8 @@ Ce dépôt regroupe plusieurs implémentations de modèles hybrides appliqués �
 
 - Python >= 3.8
 - TensorFlow / PyTorch
-- Qiskit (pour les modules quantiques)
+- Qiskit
+- PennyLane
 - Jupyter Notebook
 
 Créer un environnement avec :
